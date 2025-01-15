@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">AppGesuas</string>
+    <string name="text_perfil">Perfil</string>
+    <string name="text_initiation">Início</string>
+    <string name="text_menu">Menu</string>
+    <string name="text_register">Cadastrar</string>
+    <string name="text_name">Nome completo</string>
+    <string name="text_ex">Ex. Maria da Silva</string>
+    <string name="text_cpf">CPF</string>
+    <string name="mask_cpf">000.000.000-00</string>
+    <string name="mask_birth_date">00/00/0000</string>
+    <string name="text_birth_date">Data de nascimento</string>
+    <string name="text_cell_phone">Telefone celular</string>
+    <string name="mask_cell_phone">(99) 99999-9999</string>
+    <string name="text_select_service">Selecione o serviço</string>
+    <string name="text_forwarding">Encaminhamento</string>
+    <string name="text_follow_up">Acompanhamento</string>
+    <string name="text_social_approach">Abordagem social</string>
+    <string name="text_welcome">Acolhimento</string>
+    <string name="text_scfv">SCFV</string>
+    <string name="text_continue">Continuar</string>
+    <string name="text_show_cpf">CPF:</string>
+    <string name="text_show_date_birth">Data de nascimento:</string>
+    <string name="text_show_age">Idade: </string>
+    <string name="text_forward_to">Encaminhar para</string>
+    <string name="text_motive">Motivo</string>
+    <string name="text_forward">Encaminhar</string>
+    <string name="text_cancel">Cancelar</string>
+    <string name="text_save">Salvar</string>
+    <string name="text_confirm">Confirmar</string>
+    <string name="text_understood">Entendi</string>
+    <string name="text_hint_description_motive">Descreva aqui o motivo…</string>
+    <string name="text_confirm_forward">Deseja confirmar o encaminhamento?</string>
+    <string name="text_success_sending">Encaminhamento realizado com sucesso!</string>
+    <string name="text_back_to_form">Voltar para cadastro</string>
+
+    <!--Text Error Field-->
+    <string name="text_error_field_name">Nome completo inválido.</string>
+    <string name="text_error_field_cpf">CPF inválido.</string>
+    <string name="text_error_field_cellphone">Telefone celular inválido.</string>
+    <string name="text_error_field_birth_date">Data de nascimento inválida.</string>
+    <string name="text_error_motive">Prrencha o motivo.</string>
+
+    <!--Text Forwarder-->
+    <string name="text_forwarder_cras">CRAS</string>
+    <string name="text_forwarder_creas">CREAS</string>
+    <string name="text_forwarder_defensoria_publica">Defensoria Pública</string>
+    <string name="text_forwarder_ministerio_publico">Ministério Público</string>
+    <string name="text_forwarder_poder_judiciario">Poder Judiciário</string>
+</resources>

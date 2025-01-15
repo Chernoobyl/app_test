@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#F5F5F5</color>
+    <color name="color_bg_screen">#ACACAC</color>
+    <color name="bg_select_item">#C9C8C8</color>
+    <color name="bg_blue">#0D47A1</color>
+    <color name="color_bg_bottom_bar">#FFFFFF</color>
+
+    <!--    FONT COLORS    -->
+    <color name="text_edit_text">#0D47A1</color>
+    <color name="text_black">#424242</color>
+    <color name="text_gray">#817D7D</color>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        style="@style/TextViewDefault.TextColorBlack"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/exemple_name" />
+
+    <TextView
+        android:id="@+id/tvUserCpfLabel"
+        style="@style/TextViewDefault.TextColorBlack"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_show_cpf"
+        app:layout_constraintStart_toStartOf="@+id/tvUserName"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+    <TextView
+        android:id="@+id/tvUserCpf"
+        style="@style/TextViewDefault.TextColorGray"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUserCpfLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvUserCpfLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvUserCpfLabel"
+        tools:text="@string/mask_cpf" />
+
+    <TextView
+        android:id="@+id/tvUserBirthDateLabel"
+        style="@style/TextViewDefault.TextColorBlack"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_show_date_birth"
+        app:layout_constraintStart_toStartOf="@+id/tvUserCpfLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserCpfLabel" />
+
+    <TextView
+        android:id="@+id/tvUserBirthDate"
+        style="@style/TextViewDefault.TextColorGray"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUserBirthDateLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvUserBirthDateLabel"
+        app:layout_constraintTop_toTopOf="@id/tvUserBirthDateLabel"
+        tools:text="@string/text_exemple_show_birth_date" />
+
+    <TextView
+        android:id="@+id/tvUserAgeLabel"
+        style="@style/TextViewDefault.TextColorBlack"
+        android:layout_marginEnd="8dp"
+        android:text="@string/text_show_age"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUserBirthDate"
+        app:layout_constraintEnd_toStartOf="@+id/tvUserAge"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvUserBirthDate"
+        app:layout_constraintTop_toTopOf="@+id/tvUserBirthDate" />
+
+    <TextView
+        android:id="@+id/tvUserAge"
+        style="@style/TextViewDefault.TextColorGray"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUserAgeLabel"
+        app:layout_constraintEnd_toEndOf="@+id/tvUserName"
+        app:layout_constraintTop_toTopOf="@+id/tvUserAgeLabel"
+        tools:text="@string/text_exemple_show_age" />
+
+    <Button
+        android:id="@+id/buttonForwardTo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:drawableEnd="@drawable/ic_vector"
+        android:paddingStart="32dp"
+        android:text="@string/text_forward_to"
+        android:textAlignment="textStart"
+        android:textColor="@color/text_edit_text"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserBirthDateLabel"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/buttonMotive"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_vector"
+        android:paddingStart="32dp"
+        android:text="@string/text_motive"
+        android:textAlignment="textStart"
+        android:textColor="@color/text_edit_text"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonForwardTo"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        style="@style/ButtonCancel"
+        android:layout_width="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/text_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonForwarder"
+        style="@style/ButtonDefault"
+        android:layout_width="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/text_forward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

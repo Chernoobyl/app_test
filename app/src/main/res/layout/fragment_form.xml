@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="32dp">
+
+        <TextView
+            style="@style/TextViewDefault"
+            android:layout_marginTop="56dp"
+            android:text="@string/text_name" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/EditTextDefault"
+            android:hint="@string/text_ex"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:maxLength="50" />
+
+        <TextView
+            style="@style/TextViewDefault"
+            android:layout_marginTop="32dp"
+            android:text="@string/text_cpf" />
+
+        <EditText
+            android:id="@+id/et_cpf"
+            style="@style/EditTextDefault"
+            android:digits="0123456789"
+            android:hint="@string/mask_cpf"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="14" />
+
+        <TextView
+            style="@style/TextViewDefault"
+            android:layout_marginTop="32dp"
+            android:text="@string/text_birth_date" />
+
+        <EditText
+            android:id="@+id/et_birth_date"
+            style="@style/EditTextDefault"
+            android:hint="@string/mask_birth_date"
+            android:importantForAutofill="no"
+            android:inputType="date"
+            android:maxLength="10" />
+
+        <TextView
+            style="@style/TextViewDefault"
+            android:layout_marginTop="32dp"
+            android:text="@string/text_cell_phone" />
+
+        <EditText
+            android:id="@+id/et_cell_phone"
+            style="@style/EditTextDefault"
+            android:digits="0123456789"
+            android:hint="@string/mask_cell_phone"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="15"
+            tools:ignore="TextFields" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="60dp" />
+
+        <Button
+            android:id="@+id/button_save"
+            style="@style/ButtonDefault"
+            android:text="@string/text_register" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:minHeight="60dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/TextViewTitle"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/text_select_service" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        style="@style/RadioGroupDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:id="@+id/rbForwarding"
+            style="@style/RadioButtonDefault"
+            android:text="@string/text_forwarding" />
+
+        <RadioButton
+            android:id="@+id/rbFollowUp"
+            style="@style/RadioButtonDefault"
+            android:text="@string/text_follow_up" />
+
+        <RadioButton
+            android:id="@+id/rbSocialApproach"
+            style="@style/RadioButtonDefault"
+            android:text="@string/text_social_approach" />
+
+        <RadioButton
+            android:id="@+id/rbWelcome"
+            style="@style/RadioButtonDefault"
+            android:text="@string/text_welcome" />
+
+        <RadioButton
+            android:id="@+id/rbSCFV"
+            style="@style/RadioButtonDefault"
+            android:text="@string/text_scfv" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        style="@style/ButtonDefault"
+        android:layout_marginVertical="60dp"
+        android:text="@string/text_continue" />
+
+</LinearLayout>
