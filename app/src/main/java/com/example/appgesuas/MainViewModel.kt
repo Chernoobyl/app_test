@@ -26,3 +26,5 @@ class MainViewModel : ViewModel() {
         return phoneNumber
     }
 }
+
+// Modificação simulada para commit em 2025-01-17
