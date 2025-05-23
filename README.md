@@ -16,4 +16,3 @@ Material 3 - construção do layout.
 Jetpack Navigation - navegação do app.
 JUnit para testes unitarios.
 
-// Modificação simulada para commit em 2025-01-23
